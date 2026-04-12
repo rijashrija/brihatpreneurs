@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brihatprenuers | Real Estate Venture Studio</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-green': '#1D3C2A',
+                        'light-green': '#749444',
+                        'gold': '#B6A05E',
+                    },
+                    keyframes: {
+                        fadeSlideshow: {
+                            '0%': { opacity: '0', transform: 'scale(1.05)' },
+                            '8.33%, 33.33%': { opacity: '1', transform: 'scale(1)' },
+                            '41.66%, 100%': { opacity: '0' },
+                        },
+                        fadeInUp: {
+                            'from': { opacity: '0', transform: 'translateY(30px)' },
+                            'to': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    },
+                    animation: {
+                        'fade-slideshow': 'fadeSlideshow 18s infinite ease-in-out',
+                        'fade-in-up': 'fadeInUp 1s ease-out',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav
+        class="absolute top-0 left-0 w-full flex justify-between items-center py-4 px-4 sm:px-[5%] md:py-6 lg:py-10 z-50 gap-4">
+        <div class="bg-white/90 p-2 px-4 rounded-lg flex items-center shadow-md">
+            <a href="/" class="transition-transform duration-300 hover:scale-105 block">
+                <img src="assets/image/logo.png" class="h-5 sm:h-7 md:h-9 w-auto" alt="Brihatprenuers Logo">
+            </a>
+        </div>
+        <ul class="hidden lg:flex list-none gap-10 transition-all">
+            <li><a href="#about"
+                    class="text-white font-medium text-[0.95rem] opacity-80 hover:opacity-100 hover:text-gold transition-all duration-300">About</a>
+            </li>
+            <li><a href="#services"
+                    class="text-white font-medium text-[0.95rem] opacity-80 hover:opacity-100 hover:text-gold transition-all duration-300">Services</a>
+            </li>
+            <li><a href="#clinics"
+                    class="text-white font-medium text-[0.95rem] opacity-80 hover:opacity-100 hover:text-gold transition-all duration-300">Clinics</a>
+            </li>
+            <li><a href="#ecosystem"
+                    class="text-white font-medium text-[0.95rem] opacity-80 hover:opacity-100 hover:text-gold transition-all duration-300">Ecosystem</a>
+            </li>
+            <li><a href="#mentors"
+                    class="text-white font-medium text-[0.95rem] opacity-80 hover:opacity-100 hover:text-gold transition-all duration-300">Mentors</a>
+            </li>
+            <li><a href="#contact"
+                    class="text-white font-medium text-[0.95rem] opacity-80 hover:opacity-100 hover:text-gold transition-all duration-300">Contact</a>
+            </li>
+        </ul>
+        <div class="nav-cta">
+            <a href="#"
+                class="bg-black text-white py-2 px-5 sm:py-2.5 sm:px-6 rounded-full font-semibold text-sm transition-all duration-300 whitespace-nowrap inline-block hover:bg-gold hover:text-dark-green">Apply
+                Now</a>
+        </div>
+    </nav>
+
+    <main>
+        <section
+            class="hero relative h-screen w-full flex flex-col justify-center items-center text-center px-4 overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-[radial-gradient(circle,rgba(29,60,42,0.3)0%,rgba(29,60,42,0.7)100%)] before:z-10">
+            <div class="slideshow absolute inset-0 z-0">
+                <div class="slide absolute inset-0 bg-cover bg-center opacity-0 animate-fade-slideshow"
+                    style="background-image: url('assets/image/hero_bg.png'); animation-delay: 0s;"></div>
+                <div class="slide absolute inset-0 bg-cover bg-center opacity-0 animate-fade-slideshow"
+                    style="background-image: url('assets/image/hero_bg_2.png'); animation-delay: 6s;"></div>
+                <div class="slide absolute inset-0 bg-cover bg-center opacity-0 animate-fade-slideshow"
+                    style="background-image: url('assets/image/hero_bg_3.png'); animation-delay: 12s;"></div>
+            </div>
+            <div class="hero-content relative z-20 max-w-[900px] w-[90%] animate-fade-in-up">
+                <span
+                    class="inline-block py-2 px-6 border-[1.5px] border-white rounded-[50px] text-xs sm:text-sm font-bold tracking-[2px] mb-8 uppercase text-white">Land
+                    to Legacy. Build What Lasts.</span>
+                <h1
+                    class="font-['Outfit'] text-[clamp(2rem,10vw,4rem)] md:text-[clamp(2.5rem,8vw,5rem)] leading-[1.1] mb-6 font-bold text-white">
+                    Build <span class="text-gold">What Matters</span> in <span class="text-gold">Real Estate.</span>
+                </h1>
+                <p
+                    class="text-[clamp(1rem,2vw,1.2rem)] mb-12 max-w-[700px] mx-auto opacity-90 text-white leading-relaxed">
+                    Brihatprenuers is a venture studio where ambitious real estate entrepreneurs turn ideas into
+                    scalable ventures.</p>
+                <div class="hero-btns flex gap-6 justify-center flex-wrap">
+                    <a href="#"
+                        class="w-full sm:w-auto py-4 px-10 rounded-lg font-semibold text-base transition-all duration-300 bg-gold text-dark-green hover:brightness-110 hover:-translate-y-1 block">Join
+                        the Ecosystem</a>
+                </div>
+            </div>
+        </section>
+        <section class="why-exist py-20 lg:py-24 px-[5%] bg-[#fcfcfc] text-dark-green">
+            <div class="max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
+                <div class="left-col">
+                    <span class="inline-block text-gold uppercase text-[0.85rem] font-bold tracking-[1.5px] mb-6">Why We
+                        Exist</span>
+                    <h2
+                        class="font-['Outfit'] text-[clamp(2rem,5vw,3.5rem)] text-dark-green leading-[1.1] mb-10 font-bold">
+                        Real Estate Needs Builders. <br> <span class="italic opacity-90">Not Just Ideas.</span></h2>
+                    <p class="text-[#4a4a4a] text-[1.1rem] mb-6 max-w-[580px] leading-relaxed">Most founders struggle
+                        not because of lack of vision — but lack of the right ecosystem. Nepal is full of ambitious
+                        entrepreneurs.</p>
+                    <p class="text-[#4a4a4a] text-[1.1rem] mb-6 max-w-[580px] leading-relaxed">But many ideas fail — not
+                        because of lack of vision, but because of lack of structure: fragmented support, limited
+                        mentorship, weak legal, financial, and branding foundations.</p>
+                    <p
+                        class="text-dark-green font-bold mt-8 border-l-4 border-gold pl-6 text-[1.1rem] max-w-[580px] leading-relaxed">
+                        Brihatprenuers was created to solve this. A platform where entrepreneurs don't search for
+                        solutions — the ecosystem comes to them.</p>
+                </div>
+                <div class="right-col flex flex-col gap-6">
+                    <div
+                        class="bg-[#f3f4f6] p-8 lg:p-10 rounded-xl flex flex-col sm:flex-row gap-6 transition-all duration-300 border border-transparent hover:translate-x-2.5 hover:border-gold hover:bg-white hover:shadow-lg">
+                        <div class="w-[60px] h-[60px] shrink-0 flex items-center justify-center text-dark-green">
+                            <i class="fa-solid fa-bolt text-3xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-['Outfit'] text-[1.2rem] lg:text-[1.4rem] text-dark-green mb-3 font-bold">
+                                Fragmented Support</h3>
+                            <p class="text-[#666] text-[0.95rem] leading-relaxed">Entrepreneurs navigate a scattered
+                                landscape of advisors, platforms, and programs with no unified direction.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[#f3f4f6] p-8 lg:p-10 rounded-xl flex flex-col sm:flex-row gap-6 transition-all duration-300 border border-transparent hover:translate-x-2.5 hover:border-gold hover:bg-white hover:shadow-lg">
+                        <div class="w-[60px] h-[60px] shrink-0 flex items-center justify-center text-dark-green">
+                            <i class="fa-solid fa-users-between-lines text-3xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-['Outfit'] text-[1.2rem] lg:text-[1.4rem] text-dark-green mb-3 font-bold">
+                                Limited Mentorship</h3>
+                            <p class="text-[#666] text-[0.95rem] leading-relaxed">Access to experienced real estate
+                                operators is gated behind expensive networks and personal connections.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[#f3f4f6] p-8 lg:p-10 rounded-xl flex flex-col sm:flex-row gap-6 transition-all duration-300 border border-transparent hover:translate-x-2.5 hover:border-gold hover:bg-white hover:shadow-lg">
+                        <div class="w-[60px] h-[60px] shrink-0 flex items-center justify-center text-dark-green">
+                            <i class="fa-solid fa-shield-halved text-3xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-['Outfit'] text-[1.2rem] lg:text-[1.4rem] text-dark-green mb-3 font-bold">
+                                Weak Foundations</h3>
+                            <p class="text-[#666] text-[0.95rem] leading-relaxed">Legal, financial, and branding gaps
+                                leave promising ventures exposed to costly mistakes early on.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="difference bg-dark-green py-24 px-[5%] text-white text-center" id="about">
+            <div class="max-w-[1300px] mx-auto">
+                <div class="mb-20">
+                    <span class="inline-block text-gold uppercase text-[0.85rem] font-bold tracking-[2px] mb-6">Our
+                        Difference</span>
+                    <h2
+                        class="font-['Outfit'] text-[clamp(2rem,5vw,3.5rem)] font-bold leading-tight max-w-[900px] mx-auto text-white">
+                        This Is Not a Traditional Incubator</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div
+                        class="bg-white/5 border border-white/10 p-14 px-10 rounded-2xl text-left transition-all duration-300 h-full flex flex-col justify-between backdrop-blur-sm hover:bg-white/10 hover:border-gold hover:-translate-y-2.5">
+                        <div class="w-20 h-20 flex items-center justify-center text-gold mb-8">
+                            <i class="fa-solid fa-handshake text-5xl"></i>
+                        </div>
+                        <h3 class="text-[1.4rem] leading-relaxed font-medium mb-8 text-white opacity-95 flex-grow">We
+                            don't just guide. <br> We get involved.</h3>
+                        <div class="w-10 h-1 bg-gold"></div>
+                    </div>
+                    <div
+                        class="bg-white/5 border border-white/10 p-14 px-10 rounded-2xl text-left transition-all duration-300 h-full flex flex-col justify-between backdrop-blur-sm hover:bg-white/10 hover:border-gold hover:-translate-y-2.5">
+                        <div class="w-20 h-20 flex items-center justify-center text-gold mb-8">
+                            <i class="fa-solid fa-hammer text-5xl"></i>
+                        </div>
+                        <h3 class="text-[1.4rem] leading-relaxed font-medium mb-8 text-white opacity-95 flex-grow">We
+                            don't just mentor. We challenge and build alongside you.</h3>
+                        <div class="w-10 h-1 bg-gold"></div>
+                    </div>
+                    <div
+                        class="bg-white/5 border border-white/10 p-14 px-10 rounded-2xl text-left transition-all duration-300 h-full flex flex-col justify-between backdrop-blur-sm hover:bg-white/10 hover:border-gold hover:-translate-y-2.5">
+                        <div class="w-20 h-20 flex items-center justify-center text-gold mb-8">
+                            <i class="fa-solid fa-rocket text-5xl"></i>
+                        </div>
+                        <h3 class="text-[1.4rem] leading-relaxed font-medium mb-8 text-white opacity-95 flex-grow">We
+                            don't just offer space. We create an environment where ideas move fast.</h3>
+                        <div class="w-10 h-1 bg-gold"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="philosophy bg-white py-24 px-[5%] text-dark-green text-center" id="services">
+            <div class="max-w-[1300px] mx-auto">
+                <div class="mb-20">
+                    <span class="inline-block text-gold uppercase text-[0.85rem] font-bold tracking-[2px] mb-6">Core
+                        Philosophy</span>
+                    <h2 class="font-['Outfit'] text-[clamp(2rem,5vw,3.5rem)] font-bold leading-tight mb-8">Built on
+                        Clarity, Structure, Direction</h2>
+                    <p class="max-w-[800px] mx-auto text-[1.1rem] text-[#555] leading-relaxed">We believe: Early
+                        guidance prevents costly mistakes. Ecosystems build stronger businesses than individuals.
+                        Advisors should guide, not sell.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div class="p-12 px-6 text-center group">
+                        <div
+                            class="w-[100px] h-[100px] mx-auto mb-8 flex items-center justify-center bg-[#f9f9f9] rounded-full text-gold transition-all duration-300 group-hover:bg-gold group-hover:text-white group-hover:scale-110">
+                            <i class="fa-solid fa-lightbulb text-3xl"></i>
+                        </div>
+                        <h3 class="font-['Outfit'] text-[1.8rem] text-dark-green mb-2 font-bold">Clarity</h3>
+                        <span class="block uppercase text-gold text-[0.75rem] font-bold tracking-[1.5px] mb-6">What to
+                            do</span>
+                        <p class="text-[#666] text-base leading-relaxed max-w-[280px] mx-auto">Cut through the noise.
+                            Know your next step with absolute certainty.</p>
+                    </div>
+                    <div class="p-12 px-6 text-center group">
+                        <div
+                            class="w-[100px] h-[100px] mx-auto mb-8 flex items-center justify-center bg-[#f9f9f9] rounded-full text-gold transition-all duration-300 group-hover:bg-gold group-hover:text-white group-hover:scale-110">
+                            <i class="fa-solid fa-sitemap text-3xl"></i>
+                        </div>
+                        <h3 class="font-['Outfit'] text-[1.8rem] text-dark-green mb-2 font-bold">Structure</h3>
+                        <span class="block uppercase text-gold text-[0.75rem] font-bold tracking-[1.5px] mb-6">How to do
+                            it</span>
+                        <p class="text-[#666] text-base leading-relaxed max-w-[280px] mx-auto">Systems, processes, and
+                            frameworks that transform intent into action.</p>
+                    </div>
+                    <div class="p-12 px-6 text-center group">
+                        <div
+                            class="w-[100px] h-[100px] mx-auto mb-8 flex items-center justify-center bg-[#f9f9f9] rounded-full text-gold transition-all duration-300 group-hover:bg-gold group-hover:text-white group-hover:scale-110">
+                            <i class="fa-solid fa-compass text-3xl"></i>
+                        </div>
+                        <h3 class="font-['Outfit'] text-[1.8rem] text-dark-green mb-2 font-bold">Direction</h3>
+                        <span class="block uppercase text-gold text-[0.75rem] font-bold tracking-[1.5px] mb-6">Where to
+                            go</span>
+                        <p class="text-[#666] text-base leading-relaxed max-w-[280px] mx-auto">Strategic guidance that
+                            aligns your vision with market opportunity.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="what-you-get bg-dark-green py-24 px-[5%] text-white text-center">
+            <div class="max-w-[1400px] mx-auto">
+                <div class="mb-20">
+                    <span class="inline-block text-gold uppercase text-[0.85rem] font-bold tracking-[2px] mb-6">What You
+                        Get</span>
+                    <h2 class="font-['Outfit'] text-[clamp(2rem,5vw,3.5rem)] font-bold text-white">Everything You Need.
+                        <br> <span class="italic opacity-90 text-gold">In One Place.</span>
+                    </h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
+                    <div
+                        class="bg-white p-12 px-6 rounded-2xl text-left transition-all duration-300 border border-transparent shadow-[0_10px_30px_rgba(0,0,0,0.1)] hover:-translate-y-2.5 hover:border-gold hover:shadow-[0_20px_40px_rgba(0,0,0,0.2)]">
+                        <div class="mb-8 text-dark-green">
+                            <i class="fa-solid fa-arrow-trend-up w-10 h-10 text-2xl"></i>
+                        </div>
+                        <h3 class="font-['Outfit'] text-[1.4rem] text-dark-green mb-4 font-bold">Venture Studio</h3>
+                        <p class="text-[#444] text-[0.9rem] leading-relaxed">Co-build your startup from day one. We work
+                            alongside you to shape, structure, and scale your venture.</p>
+                    </div>
+                    <div
+                        class="bg-white p-12 px-6 rounded-2xl text-left transition-all duration-300 border border-transparent shadow-[0_10px_30px_rgba(0,0,0,0.1)] hover:-translate-y-2.5 hover:border-gold hover:shadow-[0_20px_40px_rgba(0,0,0,0.2)]">
+                        <div class="mb-8 text-dark-green">
+                            <i class="fa-solid fa-circle-nodes w-10 h-10 text-2xl"></i>
+                        </div>
+                        <h3 class="font-['Outfit'] text-[1.4rem] text-dark-green mb-4 font-bold">Incubation</h3>
+                        <p class="text-[#444] text-[0.9rem] leading-relaxed">Turn raw ideas into structured businesses.
+                            Our incubation program gives you the foundation to launch right.</p>
+                    </div>
+                    <div
+                        class="bg-white p-12 px-6 rounded-2xl text-left transition-all duration-300 border border-transparent shadow-[0_10px_30px_rgba(0,0,0,0.1)] hover:-translate-y-2.5 hover:border-gold hover:shadow-[0_20px_40px_rgba(0,0,0,0.2)]">
+                        <div class="mb-8 text-dark-green">
+                            <i class="fa-solid fa-users-between-lines w-10 h-10 text-2xl"></i>
+                        </div>
+                        <h3 class="font-['Outfit'] text-[1.4rem] text-dark-green mb-4 font-bold">Mentorship</h3>
+                        <p class="text-[#444] text-[0.9rem] leading-relaxed">Learn directly from industry operators
+                            who've built, scaled, and succeeded in real estate.</p>
+                    </div>
+                    <div
+                        class="bg-white p-12 px-6 rounded-2xl text-left transition-all duration-300 border border-transparent shadow-[0_10px_30px_rgba(0,0,0,0.1)] hover:-translate-y-2.5 hover:border-gold hover:shadow-[0_20px_40px_rgba(0,0,0,0.2)]">
+                        <div class="mb-8 text-dark-green">
+                            <i class="fa-solid fa-comments w-10 h-10 text-2xl"></i>
+                        </div>
+                        <h3 class="font-['Outfit'] text-[1.4rem] text-dark-green mb-4 font-bold">Clinics</h3>
+                        <p class="text-[#444] text-[0.9rem] leading-relaxed">Solve real problems with expert guidance.
+                            Advisory clinics with zero pressure and zero selling.</p>
+                    </div>
+                    <div
+                        class="bg-white p-12 px-6 rounded-2xl text-left transition-all duration-300 border border-transparent shadow-[0_10px_30px_rgba(0,0,0,0.1)] hover:-translate-y-2.5 hover:border-gold hover:shadow-[0_20px_40px_rgba(0,0,0,0.2)]">
+                        <div class="mb-8 text-dark-green">
+                            <i class="fa-solid fa-house-laptop w-10 h-10 text-2xl"></i>
+                        </div>
+                        <h3 class="font-['Outfit'] text-[1.4rem] text-dark-green mb-4 font-bold">Coworking</h3>
+                        <p class="text-[#444] text-[0.9rem] leading-relaxed">Work inside a focused, ambitious community
+                            built exclusively for real estate professionals.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clinic-model bg-white py-24 px-[5%] text-dark-green text-center" id="clinics">
+            <div class="max-w-[1200px] mx-auto">
+                <div class="mb-20">
+                    <span class="inline-block text-gold uppercase text-[0.85rem] font-bold tracking-[2px] mb-6">The
+                        Clinic Model</span>
+                    <h2 class="font-['Outfit'] text-[clamp(2rem,5vw,3.5rem)] font-bold">Advice Before Expense</h2>
+                    <p class="text-[1.1rem] text-[#666] mt-4">Our clinics are different.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+                    <div
+                        class="bg-[#fcfcfc] p-12 px-8 rounded-xl border border-black/5 transition-all duration-300 hover:bg-white hover:shadow-[0_10px_30px_rgba(0,0,0,0.05)] hover:border-gold hover:-translate-y-1.5">
+                        <div class="text-gold mb-6 flex justify-center">
+                            <i class="fa-regular fa-message w-10 h-10 text-4xl"></i>
+                        </div>
+                        <h3 class="font-['Outfit'] text-[1.4rem] font-semibold">Advisory only</h3>
+                    </div>
+                    <div
+                        class="bg-[#fcfcfc] p-12 px-8 rounded-xl border border-black/5 transition-all duration-300 hover:bg-white hover:shadow-[0_10px_30px_rgba(0,0,0,0.05)] hover:border-gold hover:-translate-y-1.5">
+                        <div class="text-gold mb-6 flex justify-center">
+                            <i class="fa-solid fa-handshake-angle w-10 h-10 text-4xl"></i>
+                        </div>
+                        <h3 class="font-['Outfit'] text-[1.4rem] font-semibold">No selling</h3>
+                    </div>
+                    <div
+                        class="bg-[#fcfcfc] p-12 px-8 rounded-xl border border-black/5 transition-all duration-300 hover:bg-white hover:shadow-[0_10px_30px_rgba(0,0,0,0.05)] hover:border-gold hover:-translate-y-1.5">
+                        <div class="text-gold mb-6 flex justify-center">
+                            <i class="fa-regular fa-sun w-10 h-10 text-4xl"></i>
+                        </div>
+                        <h3 class="font-['Outfit'] text-[1.4rem] font-semibold">No pressure</h3>
+                    </div>
+                </div>
+
+                <div
+                    class="mt-16 bg-dark-green p-10 lg:p-12 px-16 rounded-[20px] flex flex-col lg:flex-row items-start lg:items-center justify-center gap-6 lg:gap-10 text-white">
+                    <span class="uppercase font-bold text-[0.9rem] text-gold tracking-[2px]">You Gain:</span>
+                    <ul class="flex flex-col lg:flex-row gap-6 lg:gap-8 list-none m-0 p-0">
+                        <li class="flex items-center gap-2.5 text-[1.1rem] font-medium"><i
+                                class="fa-regular fa-eye text-gold w-5 h-5 text-base"></i> Clarity before spending</li>
+                        <li class="flex items-center gap-2.5 text-[1.1rem] font-medium"><i
+                                class="fa-regular fa-map text-gold w-5 h-5 text-base"></i> Direction before decisions
+                        </li>
+                        <li class="flex items-center gap-2.5 text-[1.1rem] font-medium"><i
+                                class="fa-solid fa-arrow-trend-up text-gold w-5 h-5 text-base"></i> Readiness before
+                            scaling</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="ecosystem bg-dark-green py-24 px-[5%] text-white" id="ecosystem">
+            <div class="max-w-[1300px] mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-[1.1fr,0.9fr] gap-12 lg:gap-20 items-center">
+                    <div class="eco-content">
+                        <span class="inline-block text-gold uppercase text-[0.85rem] font-bold tracking-[2px] mb-6">The
+                            Ecosystem</span>
+                        <h2 class="text-[clamp(2.5rem,6vw,4rem)] leading-[1.1] mb-10 font-bold">Access Changes <br>
+                            <span class="italic text-gold">Everything</span>
+                        </h2>
+                        <div class="text-[1.2rem] leading-relaxed mb-12 text-white/80 border-l-2 border-gold pl-6">
+                            <p class="font-semibold text-white mb-2">The right room can change your trajectory.</p>
+                            <p>Because in real estate, who you build with matters as much as what you build.</p>
+                        </div>
+                        <ul class="flex flex-col gap-6 list-none p-0">
+                            <li class="flex items-center gap-4 text-[1.05rem]"><i
+                                    class="fa-solid fa-bullseye text-gold w-5 h-5 text-base shrink-0"></i> Right advisor
+                                at the right stage.</li>
+                            <li class="flex items-center gap-4 text-[1.05rem]"><i
+                                    class="fa-solid fa-shield-halved text-gold w-5 h-5 text-base shrink-0"></i> Ethical
+                                engagement.</li>
+                            <li class="flex items-center gap-4 text-[1.05rem]"><i
+                                    class="fa-solid fa-scale-balanced text-gold w-5 h-5 text-base shrink-0"></i> No
+                                conflict of interest.</li>
+                        </ul>
+                    </div>
+
+                    <div class="eco-network">
+                        <span
+                            class="block uppercase text-[0.85rem] font-bold tracking-[2px] text-gold mb-8">Brihatprenuers
+                            Connects:</span>
+                        <div class="flex flex-col gap-4">
+                            <div
+                                class="bg-white/5 border border-white/10 p-5 px-6 rounded-xl flex items-center gap-5 transition-all duration-300 hover:bg-white/10 hover:border-gold hover:translate-x-2.5">
+                                <span
+                                    class="bg-gold text-dark-green w-8 h-8 text-xl rounded-full flex items-center justify-center font-bold text-[0.9rem] shrink-0">1</span>
+                                <h3 class="text-[1.05rem] font-medium m-0">Entrepreneurs</h3>
+                            </div>
+                            <div
+                                class="bg-white/5 border border-white/10 p-5 px-6 rounded-xl flex items-center gap-5 transition-all duration-300 hover:bg-white/10 hover:border-gold hover:translate-x-2.5">
+                                <span
+                                    class="bg-gold text-dark-green w-8 h-8 text-xl rounded-full flex items-center justify-center font-bold text-[0.9rem] shrink-0">2</span>
+                                <h3 class="text-[1.05rem] font-medium m-0">Law Firms</h3>
+                            </div>
+                            <div
+                                class="bg-white/5 border border-white/10 p-5 px-6 rounded-xl flex items-center gap-5 transition-all duration-300 hover:bg-white/10 hover:border-gold hover:translate-x-2.5">
+                                <span
+                                    class="bg-gold text-dark-green w-8 h-8 text-xl rounded-full flex items-center justify-center font-bold text-[0.9rem] shrink-0">3</span>
+                                <h3 class="text-[1.05rem] font-medium m-0">CA Firms</h3>
+                            </div>
+                            <div
+                                class="bg-white/5 border border-white/10 p-5 px-6 rounded-xl flex items-center gap-5 transition-all duration-300 hover:bg-white/10 hover:border-gold hover:translate-x-2.5">
+                                <span
+                                    class="bg-gold text-dark-green w-8 h-8 text-xl rounded-full flex items-center justify-center font-bold text-[0.9rem] shrink-0">4</span>
+                                <h3 class="text-[1.05rem] font-medium m-0">Branding & Marketing Agencies</h3>
+                            </div>
+                            <div
+                                class="bg-white/5 border border-white/10 p-5 px-6 rounded-xl flex items-center gap-5 transition-all duration-300 hover:bg-white/10 hover:border-gold hover:translate-x-2.5">
+                                <span
+                                    class="bg-gold text-dark-green w-8 h-8 text-xl rounded-full flex items-center justify-center font-bold text-[0.9rem] shrink-0">5</span>
+                                <h3 class="text-[1.05rem] font-medium m-0">Investment Analysts</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-20 pt-10 border-t border-white/10 text-center">
+                    <p class="text-[1.1rem] text-white/70 max-w-[600px] mx-auto m-0">We act as the ecosystem
+                        orchestrator — ensuring the right advisor at the right stage.</p>
+                </div>
+            </div>
+        </section>
+        <section class="process bg-white py-24 px-[5%] text-dark-green text-center" id="mentors">
+            <div class="max-w-[1200px] mx-auto">
+                <div class="mb-20">
+                    <span class="inline-block text-gold uppercase text-[0.85rem] font-bold tracking-[2px] mb-6">The
+                        Process</span>
+                    <h2 class="font-['Outfit'] text-[clamp(2rem,5vw,3.5rem)] font-bold">Simple. Focused. Effective.</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-20 relative">
+                    <div
+                        class="hidden lg:block absolute top-[50px] left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-gold/0 via-gold/40 to-gold/0 z-0">
+                    </div>
+
+                    <div class="relative z-10 px-2 group">
+                        <div
+                            class="w-[100px] h-[100px] mx-auto mb-10 bg-white border border-gold/30 rounded-full flex items-center justify-center text-gold shadow-[0_10px_30px_rgba(0,0,0,0.03)] transition-all duration-300 group-hover:border-gold group-hover:-translate-y-2.5 group-hover:shadow-[0_15px_40px_rgba(182,160,94,0.15)]">
+                            <i class="fa-solid fa-file-pen w-11 h-11 text-3xl"></i>
+                        </div>
+                        <h3 class="font-['Outfit'] text-[1.5rem] text-dark-green mb-5 font-bold">Apply</h3>
+                        <p class="text-[#666] text-[0.95rem] leading-relaxed max-w-[250px] mx-auto">Tell us what you're
+                            building. Share your vision, your stage, and your goals.</p>
+                    </div>
+
+                    <div class="relative z-10 px-2 group">
+                        <div
+                            class="w-[100px] h-[100px] mx-auto mb-10 bg-white border border-gold/30 rounded-full flex items-center justify-center text-gold shadow-[0_10px_30px_rgba(0,0,0,0.03)] transition-all duration-300 group-hover:border-gold group-hover:-translate-y-2.5 group-hover:shadow-[0_15px_40px_rgba(182,160,94,0.15)]">
+                            <i class="fa-solid fa-user-check w-11 h-11 text-3xl"></i>
+                        </div>
+                        <h3 class="font-['Outfit'] text-[1.5rem] text-dark-green mb-5 font-bold">Get Selected</h3>
+                        <p class="text-[#666] text-[0.95rem] leading-relaxed max-w-[250px] mx-auto">We choose founders
+                            with strong intent. If selected, we reach out within days.</p>
+                    </div>
+
+                    <div class="relative z-10 px-2 group">
+                        <div
+                            class="w-[100px] h-[100px] mx-auto mb-10 bg-white border border-gold/30 rounded-full flex items-center justify-center text-gold shadow-[0_10px_30px_rgba(0,0,0,0.03)] transition-all duration-300 group-hover:border-gold group-hover:-translate-y-2.5 group-hover:shadow-[0_15px_40px_rgba(182,160,94,0.15)]">
+                            <i class="fa-solid fa-hammer w-11 h-11 text-3xl"></i>
+                        </div>
+                        <h3 class="font-['Outfit'] text-[1.5rem] text-dark-green mb-5 font-bold">Start Building</h3>
+                        <p class="text-[#666] text-[0.95rem] leading-relaxed max-w-[250px] mx-auto">Work closely with
+                            our team. Access mentors, clinics, coworking, and the ecosystem.</p>
+                    </div>
+
+                    <div class="relative z-10 px-2 group">
+                        <div
+                            class="w-[100px] h-[100px] mx-auto mb-10 bg-white border border-gold/30 rounded-full flex items-center justify-center text-gold shadow-[0_10px_30px_rgba(0,0,0,0.03)] transition-all duration-300 group-hover:border-gold group-hover:-translate-y-2.5 group-hover:shadow-[0_15px_40px_rgba(182,160,94,0.15)]">
+                            <i class="fa-solid fa-rocket w-11 h-11 text-3xl"></i>
+                        </div>
+                        <h3 class="font-['Outfit'] text-[1.5rem] text-dark-green mb-5 font-bold">Scale</h3>
+                        <p class="text-[#666] text-[0.95rem] leading-relaxed max-w-[250px] mx-auto">Access networks,
+                            capital, and growth infrastructure to take your venture to the next level.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="who-its-for bg-dark-green py-24 px-[5%] text-white text-center">
+            <div class="max-w-[1200px] mx-auto">
+                <div class="mb-20">
+                    <span class="inline-block text-gold uppercase text-[0.85rem] font-bold tracking-[2px] mb-6">Who It's
+                        For</span>
+                    <h2 class="font-['Outfit'] text-[clamp(2rem,5vw,3.5rem)] font-bold">Built for People Who <span
+                            class="italic text-gold">Take Action</span></h2>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+                    <div
+                        class="bg-white/5 border border-white/10 p-14 px-8 rounded-2xl transition-all duration-300 hover:bg-white hover:-translate-y-2.5 hover:shadow-[0_20px_40px_rgba(0,0,0,0.2)] group cursor-default">
+                        <div
+                            class="text-gold mb-6 flex justify-center group-hover:text-dark-green transition-colors duration-300">
+                            <i class="fa-solid fa-arrow-trend-up text-4xl"></i>
+                        </div>
+                        <h3
+                            class="font-['Outfit'] text-[1.2rem] font-semibold leading-relaxed group-hover:text-dark-green transition-colors duration-300">
+                            Early-stage founders</h3>
+                    </div>
+                    <div
+                        class="bg-white/5 border border-white/10 p-14 px-8 rounded-2xl transition-all duration-300 hover:bg-white hover:-translate-y-2.5 hover:shadow-[0_20px_40px_rgba(0,0,0,0.2)] group cursor-default">
+                        <div
+                            class="text-gold mb-6 flex justify-center group-hover:text-dark-green transition-colors duration-300">
+                            <i class="fa-regular fa-building text-4xl"></i>
+                        </div>
+                        <h3
+                            class="font-['Outfit'] text-[1.2rem] font-semibold leading-relaxed group-hover:text-dark-green transition-colors duration-300">
+                            Real estate developers</h3>
+                    </div>
+                    <div
+                        class="bg-white/5 border border-white/10 p-14 px-8 rounded-2xl transition-all duration-300 hover:bg-white hover:-translate-y-2.5 hover:shadow-[0_20px_40px_rgba(0,0,0,0.2)] group cursor-default">
+                        <div
+                            class="text-gold mb-6 flex justify-center group-hover:text-dark-green transition-colors duration-300">
+                            <i class="fa-solid fa-bolt text-4xl"></i>
+                        </div>
+                        <h3
+                            class="font-['Outfit'] text-[1.2rem] font-semibold leading-relaxed group-hover:text-dark-green transition-colors duration-300">
+                            PropTech innovators</h3>
+                    </div>
+                    <div
+                        class="bg-white/5 border border-white/10 p-14 px-8 rounded-2xl transition-all duration-300 hover:bg-white hover:-translate-y-2.5 hover:shadow-[0_20px_40px_rgba(0,0,0,0.2)] group cursor-default">
+                        <div
+                            class="text-gold mb-6 flex justify-center group-hover:text-dark-green transition-colors duration-300">
+                            <i class="fa-solid fa-arrow-right text-4xl"></i>
+                        </div>
+                        <h3
+                            class="font-['Outfit'] text-[1.2rem] font-semibold leading-relaxed group-hover:text-dark-green transition-colors duration-300">
+                            Builders with scalable ideas</h3>
+                    </div>
+                </div>
+
+                <div class="mt-16">
+                    <p class="text-[1.4rem] md:text-[1.1rem] italic text-gold font-medium opacity-90">"If you're serious
+                        about execution, you'll fit right in."</p>
+                </div>
+            </div>
+        </section>
+        <section class="membership bg-white py-24 px-[5%] text-dark-green text-center">
+            <div class="max-w-[1300px] mx-auto">
+                <div class="mb-20">
+                    <span
+                        class="inline-block text-gold uppercase text-[0.85rem] font-bold tracking-[2px] mb-6">Membership</span>
+                    <h2 class="font-['Outfit'] text-[clamp(2rem,5vw,3.5rem)] font-bold">Structured for Every Stage</h2>
+                    <p class="text-[1.1rem] text-[#666] mt-4">Each tier unlocks deeper access, stronger support, and
+                        faster growth.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-20">
+                    <!-- Starter Card -->
+                    <div
+                        class="bg-dark-green text-white p-14 px-10 rounded-2xl text-left relative transition-all duration-300 flex flex-col hover:-translate-y-2.5">
+                        <h3 class="font-['Outfit'] text-[1.8rem] font-bold mb-2">Starter Founder</h3>
+                        <span class="block text-[0.75rem] font-bold tracking-[1.5px] opacity-80 mb-10">FOR EARLY-STAGE
+                            BUILDERS</span>
+                        <ul class="list-none p-0 mb-12 flex-grow">
+                            <li class="flex items-center gap-3 mb-5 text-[1.05rem]"><i
+                                    class="fa-regular fa-circle-check w-5 h-5 text-base text-gold"></i> Access to
+                                workspace</li>
+                            <li class="flex items-center gap-3 mb-5 text-[1.05rem]"><i
+                                    class="fa-regular fa-circle-check w-5 h-5 text-base text-gold"></i> Group mentorship
+                            </li>
+                            <li class="flex items-center gap-3 mb-5 text-[1.05rem]"><i
+                                    class="fa-regular fa-circle-check w-5 h-5 text-base text-gold"></i> Clinics</li>
+                        </ul>
+                        <a href="#"
+                            class="w-full text-center p-5 font-bold border-2 border-gold text-gold rounded-lg transition-all duration-300 hover:bg-gold hover:text-dark-green">Apply
+                            Now</a>
+                    </div>
+
+                    <!-- Growth Card (Primary) -->
+                    <div
+                        class="bg-gold text-dark-green p-14 px-10 rounded-2xl text-left relative transition-all duration-300 flex flex-col lg:scale-105 z-10 shadow-[0_20px_50px_rgba(182,160,94,0.2)] hover:-translate-y-1">
+                        <span
+                            class="absolute -top-4 left-1/2 -translate-x-1/2 bg-dark-green text-white py-2 px-6 rounded-full text-[0.75rem] font-bold tracking-[1px]">MOST
+                            POPULAR</span>
+                        <h3 class="font-['Outfit'] text-[1.8rem] font-bold mb-2">Growth Founder</h3>
+                        <span class="block text-[0.75rem] font-bold tracking-[1.5px] opacity-80 mb-10">FOR SCALING
+                            VENTURES</span>
+                        <ul class="list-none p-0 mb-12 flex-grow">
+                            <li class="flex items-center gap-3 mb-5 text-[1.05rem]"><i
+                                    class="fa-regular fa-circle-check w-5 h-5 text-base"></i> Dedicated workspace</li>
+                            <li class="flex items-center gap-3 mb-5 text-[1.05rem]"><i
+                                    class="fa-regular fa-circle-check w-5 h-5 text-base"></i> Priority clinics</li>
+                            <li class="flex items-center gap-3 mb-5 text-[1.05rem]"><i
+                                    class="fa-regular fa-circle-check w-5 h-5 text-base"></i> 1-on-1 mentorship</li>
+                        </ul>
+                        <a href="#"
+                            class="w-full text-center p-5 font-bold border-2 border-dark-green bg-dark-green text-white rounded-lg transition-all duration-300 hover:bg-transparent hover:text-dark-green">Apply
+                            Now</a>
+                    </div>
+
+                    <!-- Scale Card -->
+                    <div
+                        class="bg-dark-green text-white p-14 px-10 rounded-2xl text-left relative transition-all duration-300 flex flex-col hover:-translate-y-2.5">
+                        <h3 class="font-['Outfit'] text-[1.8rem] font-bold mb-2">Scale Founder</h3>
+                        <span class="block text-[0.75rem] font-bold tracking-[1.5px] opacity-80 mb-10">FOR SERIOUS
+                            EXPANSION</span>
+                        <ul class="list-none p-0 mb-12 flex-grow">
+                            <li class="flex items-center gap-3 mb-5 text-[1.05rem]"><i
+                                    class="fa-regular fa-circle-check w-5 h-5 text-base text-gold"></i> Private cabin
+                            </li>
+                            <li class="flex items-center gap-3 mb-5 text-[1.05rem]"><i
+                                    class="fa-regular fa-circle-check w-5 h-5 text-base text-gold"></i> Investor access
+                            </li>
+                            <li class="flex items-center gap-3 mb-5 text-[1.05rem]"><i
+                                    class="fa-regular fa-circle-check w-5 h-5 text-base text-gold"></i> Customized
+                                roadmap</li>
+                        </ul>
+                        <a href="#"
+                            class="w-full text-center p-5 font-bold border-2 border-gold text-gold rounded-lg transition-all duration-300 hover:bg-gold hover:text-dark-green">Apply
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-us py-24 px-[5%] bg-white text-dark-green">
+            <div class="container mx-auto">
+                <div class="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
+                    <div class="why-us-content flex-1 text-center lg:text-left">
+                        <span class="sub-label">Why Us</span>
+                        <h2 class="text-4xl md:text-5xl font-bold mt-4 leading-tight text-gold">Because Execution Needs <br> <span
+                                class="italic text-dark-green">Structure</span></h2>
+                        <ul class="why-us-list mt-8 flex flex-col gap-6 text-lg text-gray-700">
+                            <li class="flex items-center gap-4 justify-center lg:justify-start">
+                                <i class="fa-solid fa-circle-check text-gold w-6 h-6 text-lg"></i>
+                                Focused on real estate only
+                            </li>
+                            <li class="flex items-center gap-4 justify-center lg:justify-start">
+                                <i class="fa-solid fa-circle-check text-gold w-6 h-6 text-lg"></i>
+                                Hands-on venture building
+                            </li>
+                            <li class="flex items-center gap-4 justify-center lg:justify-start">
+                                <i class="fa-solid fa-circle-check text-gold w-6 h-6 text-lg"></i>
+                                Strong industry network
+                            </li>
+                            <li class="flex items-center gap-4 justify-center lg:justify-start">
+                                <i class="fa-solid fa-circle-check text-gold w-6 h-6 text-lg"></i>
+                                Practical, no-fluff approach
+                            </li>
+                            <li class="flex items-center gap-4 justify-center lg:justify-start">
+                                <i class="fa-solid fa-circle-check text-gold w-6 h-6 text-lg"></i>
+                                We help you move: <span class="font-bold text-dark-green ml-1">idea &rarr; execution
+                                    &rarr; scale</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="win-model flex-1 bg-[#fcfcfc] p-10 lg:p-16 rounded-3xl border border-black/5 shadow-sm">
+                        <span
+                            class="block uppercase font-bold text-xs tracking-[2px] text-gray-400 mb-12 text-center">Win-Win-Win
+                            Model</span>
+                        <div class="flex flex-col gap-6">
+                            <div
+                                class="model-card bg-white p-8 rounded-2xl shadow-sm border-l-4 border-gold transition-all duration-300 hover:translate-x-2 hover:shadow-md">
+                                <h3 class="text-xl font-bold mb-2">Entrepreneurs</h3>
+                                <p class="text-gray-600 text-sm">Start with low risk, avoid costly mistakes</p>
+                            </div>
+                            <div
+                                class="model-card bg-white p-8 rounded-2xl shadow-sm border-l-4 border-gold transition-all duration-300 hover:translate-x-2 hover:shadow-md">
+                                <h3 class="text-xl font-bold mb-2">Partners</h3>
+                                <p class="text-gray-600 text-sm">Access pre-screened, high-quality clients</p>
+                            </div>
+                            <div
+                                class="model-card bg-white p-8 rounded-2xl shadow-sm border-l-4 border-gold transition-all duration-300 hover:translate-x-2 hover:shadow-md">
+                                <h3 class="text-xl font-bold mb-2">Brihatprenuers</h3>
+                                <p class="text-gray-600 text-sm">Build long-term value through ecosystem success</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mentors py-24 px-[5%] bg-[#fcfcfc]" id="mentors">
+            <div class="container mx-auto">
+                <div class="section-header text-center mb-16">
+                    <span class="sub-label">Our Experts</span>
+                    <h2 class="text-4xl md:text-5xl font-bold mt-4 text-gold">Meet Your Mentors</h2>
+                    <p class="section-desc mt-4 text-gray-600 max-w-2xl mx-auto">Industry veterans committed to helping
+                        real estate entrepreneurs succeed in Nepal.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div
+                        class="mentor-card bg-white rounded-2xl overflow-hidden transition-all duration-300 border border-black/5 hover:-translate-y-2 hover:shadow-2xl">
+                        <div class="h-[300px] overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80"
+                                alt="Rajesh Shrestha"
+                                class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                        </div>
+                        <div class="p-8 text-center">
+                            <h3 class="text-xl font-bold mb-2 text-dark-green">Rajesh Shrestha</h3>
+                            <p class="text-gold text-xs font-bold uppercase tracking-wider">Real Estate Developer &
+                                Investor</p>
+                        </div>
+                    </div>
+                    <div
+                        class="mentor-card bg-white rounded-2xl overflow-hidden transition-all duration-300 border border-black/5 hover:-translate-y-2 hover:shadow-2xl">
+                        <div class="h-[300px] overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80"
+                                alt="Sita Karmacharya"
+                                class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                        </div>
+                        <div class="p-8 text-center">
+                            <h3 class="text-xl font-bold mb-2 text-dark-green">Sita Karmacharya</h3>
+                            <p class="text-gold text-xs font-bold uppercase tracking-wider">PropTech Founder & Advisor
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="mentor-card bg-white rounded-2xl overflow-hidden transition-all duration-300 border border-black/5 hover:-translate-y-2 hover:shadow-2xl">
+                        <div class="h-[300px] overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80"
+                                alt="Binod Maharjan"
+                                class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                        </div>
+                        <div class="p-8 text-center">
+                            <h3 class="text-xl font-bold mb-2 text-dark-green">Binod Maharjan</h3>
+                            <p class="text-gold text-xs font-bold uppercase tracking-wider">Real Estate Finance Expert
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="cta-build relative py-24 px-[5%] text-center text-white overflow-hidden bg-[url('assets/image/hero_bg.png')] bg-cover bg-center bg-fixed">
+            <div class="absolute inset-0 bg-gradient-to-b from-dark-green/90 to-dark-green/80 z-10"></div>
+            <div class="container mx-auto relative z-20 max-w-4xl">
+                <div class="cta-content">
+                    <span class="block text-gold uppercase text-xs font-bold tracking-[2px] mb-6">Ready to Build?</span>
+                    <h2 class="text-4xl md:text-6xl font-bold leading-tight mb-8">If You're Ready to Build, <br> <span
+                            class="italic text-gold">Let's Start</span></h2>
+                    <p class="text-lg md:text-xl opacity-90 max-w-2xl mx-auto mb-12">This is not for everyone. Only for
+                        those who are ready to take action.</p>
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                        <a href="#" class="btn py-4 px-8 rounded-2xl bg-gold text-dark-green font-bold hover:bg-dark-green border border-gold text-dark-green min-w-[200px] hover:text-white">Apply
+                            for
+                            Incubation</a>
+                        <a href="#" class="btn py-4 px-8 rounded-2xl bg-white text-dark-green font-bold hover:bg-dark-green border border-white text-dark-green min-w-[200px] hover:text-white">Book
+                            a
+                            Clinic</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section py-24 px-[5%] bg-[#f8f9fa] text-dark-green" id="contact">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-[1fr,1.2fr] gap-16 lg:gap-24 items-start">
+                    <div class="contact-info">
+                        <span class="sub-label">Get Started</span>
+                        <h2 class="text-4xl md:text-5xl font-bold mt-4 leading-tight">Apply to Brihatprenuers</h2>
+                        <p class="mt-6 text-lg text-gray-600 max-w-md mb-12">Ready to build something real? Tell us
+                            about your venture and we'll reach out within 2-3 business days.</p>
+
+                        <div class="flex flex-col gap-10">
+                            <div class="flex gap-6 items-start">
+                                <div
+                                    class="w-12 h-12 bg-white border border-gold/20 rounded-xl flex items-center justify-center text-gold shrink-0 shadow-sm">
+                                    <i class="fa-solid fa-location-dot w-6 h-6 text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-[0.9rem] uppercase tracking-wider text-gold font-bold mb-1">Address
+                                    </h4>
+                                    <p class="text-lg font-medium text-dark-green">Punya Mansion, Tahagalli, Kathmandu,
+                                        Nepal</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6 items-start">
+                                <div
+                                    class="w-12 h-12 bg-white border border-gold/20 rounded-xl flex items-center justify-center text-gold shrink-0 shadow-sm">
+                                    <i class="fa-regular fa-envelope w-6 h-6 text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-[0.9rem] uppercase tracking-wider text-gold font-bold mb-1">Email
+                                    </h4>
+                                    <p class="text-lg font-medium text-dark-green">info@brihatpreneurs.com</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6 items-start">
+                                <div
+                                    class="w-12 h-12 bg-white border border-gold/20 rounded-xl flex items-center justify-center text-gold shrink-0 shadow-sm">
+                                    <i class="fa-solid fa-phone w-6 h-6 text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-[0.9rem] uppercase tracking-wider text-gold font-bold mb-1">Phone
+                                    </h4>
+                                    <p class="text-lg font-medium text-dark-green">+977-XXXXXXXXXX</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 md:p-16 rounded-3xl shadow-xl shadow-black/5">
+                        <form class="space-y-8">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div class="flex flex-col gap-3">
+                                    <label for="full-name"
+                                        class="text-[0.85rem] font-bold uppercase tracking-wider text-dark-green">Full
+                                        Name *</label>
+                                    <input type="text" id="full-name" placeholder="Your full name"
+                                        class="p-4 border border-gray-200 rounded-lg focus:outline-none focus:border-gold focus:ring-4 focus:ring-gold/10 bg-[#fcfcfc] transition-all"
+                                        required>
+                                </div>
+                                <div class="flex flex-col gap-3">
+                                    <label for="email"
+                                        class="text-[0.85rem] font-bold uppercase tracking-wider text-dark-green">Email
+                                        *</label>
+                                    <input type="email" id="email" placeholder="you@example.com"
+                                        class="p-4 border border-gray-200 rounded-lg focus:outline-none focus:border-gold focus:ring-4 focus:ring-gold/10 bg-[#fcfcfc] transition-all"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div class="flex flex-col gap-3">
+                                    <label for="phone"
+                                        class="text-[0.85rem] font-bold uppercase tracking-wider text-dark-green">Phone
+                                        (Optional)</label>
+                                    <input type="tel" id="phone" placeholder="+977 98XXXXXXXX"
+                                        class="p-4 border border-gray-200 rounded-lg focus:outline-none focus:border-gold focus:ring-4 focus:ring-gold/10 bg-[#fcfcfc] transition-all">
+                                </div>
+                                <div class="flex flex-col gap-3">
+                                    <label for="program"
+                                        class="text-[0.85rem] font-bold uppercase tracking-wider text-dark-green">Program
+                                        Interest *</label>
+                                    <select id="program"
+                                        class="p-4 border border-gray-200 rounded-lg focus:outline-none focus:border-gold focus:ring-4 focus:ring-gold/10 bg-[#fcfcfc] transition-all"
+                                        required>
+                                        <option value="" disabled selected>Select a program</option>
+                                        <option value="venture-studio">Venture Studio</option>
+                                        <option value="incubation">Incubation</option>
+                                        <option value="mentorship">Mentorship</option>
+                                        <option value="clinics">Clinics</option>
+                                        <option value="coworking">Coworking</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3">
+                                <label for="message"
+                                    class="text-[0.85rem] font-bold uppercase tracking-wider text-dark-green">Tell us
+                                    about your venture *</label>
+                                <textarea id="message" rows="5"
+                                    placeholder="What are you building and what do you need support with?"
+                                    class="p-4 border border-gray-200 rounded-lg focus:outline-none focus:border-gold focus:ring-4 focus:ring-gold/10 bg-[#fcfcfc] transition-all"
+                                    required></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full py-5 bg-dark-green text-white font-bold text-lg rounded-lg transition-all hover:bg-gold hover:text-dark-green hover:-translate-y-1 shadow-lg hover:shadow-xl">Submit
+                                Application</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-white pt-24 pb-10 px-[5%] border-t border-white/10">
+        <div class="max-w-[1300px] mx-auto">
+            <div class="flex flex-col lg:flex-row gap-16 lg:gap-24 mb-20">
+                <div class="flex-[1.2]">
+                    <div class="bg-white/90 p-4 px-6 rounded-lg inline-block shadow-[0_4px_15px_rgba(0,0,0,0.1)] mb-8">
+                        <img src="assets/image/logo.png" alt="Brihatprenuers Logo" class="h-[clamp(25px,4vw,35px)]">
+                    </div>
+                    <p class="text-[1.1rem] text-white/70 leading-[1.8] max-w-[400px] mb-4">A venture studio empowering
+                        real estate entrepreneurs with space, mentorship, and community.</p>
+                    <p class="text-gold font-bold italic opacity-90 mb-8">Land to Legacy. Build what lasts.</p>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-11 h-11  rounded-full bg-white/5 flex items-center justify-center text-white border border-white/10 transition-all duration-300 hover:bg-gold hover:text-dark-green hover:-translate-y-1 hover:border-gold">
+                            <i class="fa-brands fa-linkedin-in w-5 h-5 text-lg flex items-center justify-center"></i>
+                        </a>
+                        <a href="#"
+                            class="w-11 h-11  rounded-full bg-white/5 flex items-center justify-center text-white border border-white/10 transition-all duration-300 hover:bg-gold hover:text-dark-green hover:-translate-y-1 hover:border-gold">
+                            <i class="fa-brands fa-facebook-f w-5 h-5 text-lg flex items-center justify-center"></i>
+                        </a>
+                        <a href="#"
+                            class="w-11 h-11  rounded-full bg-white/5 flex items-center justify-center text-white border border-white/10 transition-all duration-300 hover:bg-gold hover:text-dark-green hover:-translate-y-1 hover:border-gold">
+                            <i class="fa-brands fa-instagram w-5 h-5 text-lg flex items-center justify-center "></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex-[2] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">    
+                    <div>
+                        <h4 class="font-['Outfit'] text-[1.3rem] mb-8 font-semibold">Navigation</h4>
+                        <ul class="list-none p-0 flex flex-col gap-4">
+                            <li><a href="#about"
+                                    class="text-[0.95rem] text-white/70 transition-all duration-300 hover:text-gold hover:translate-x-1.5 block">About</a>
+                            </li>
+                            <li><a href="#services"
+                                    class="text-[0.95rem] text-white/70 transition-all duration-300 hover:text-gold hover:translate-x-1.5 block">Programs</a>
+                            </li>
+                            <li><a href="#ecosystem"
+                                    class="text-[0.95rem] text-white/70 transition-all duration-300 hover:text-gold hover:translate-x-1.5 block">Ecosystem</a>
+                            </li>
+                            <li><a href="#contact"
+                                    class="text-[0.95rem] text-white/70 transition-all duration-300 hover:text-gold hover:translate-x-1.5 block">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-['Outfit'] text-[1.3rem] mb-8 font-semibold">Programs</h4>
+                        <ul class="list-none p-0 flex flex-col gap-4">
+                            <li><a href="#"
+                                    class="text-[0.95rem] text-white/70 transition-all duration-300 hover:text-gold hover:translate-x-1.5 block">Venture
+                                    Studio</a></li>
+                            <li><a href="#"
+                                    class="text-[0.95rem] text-white/70 transition-all duration-300 hover:text-gold hover:translate-x-1.5 block">Incubation</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-[0.95rem] text-white/70 transition-all duration-300 hover:text-gold hover:translate-x-1.5 block">Mentorship</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-[0.95rem] text-white/70 transition-all duration-300 hover:text-gold hover:translate-x-1.5 block">Clinics</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-[0.95rem] text-white/70 transition-all duration-300 hover:text-gold hover:translate-x-1.5 block">Coworking</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-['Outfit'] text-[1.3rem] mb-8 font-semibold">Contact</h4>
+                        <div class="flex flex-col gap-4">
+                            <p class="text-[0.95rem] text-white/70 leading-relaxed border-l-2 border-gold pl-4">Punya
+                                Mansion, Tahagalli, Kathmandu, Nepal</p>
+                            <p class="text-[0.95rem] text-white/70 leading-relaxed border-l-2 border-gold pl-4">
+                                info@brihatpreneurs.com</p>
+                            <p class="text-[0.95rem] text-white/70 leading-relaxed border-l-2 border-gold pl-4">
+                                +977-XXXXXXXXXX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-5">
+                <div class="text-[0.9rem] text-white/50 text-center md:text-left">
+                    <p>&copy; 2026 Brihatpreneurs, Kathmandu, Nepal. All rights reserved.</p>
+                </div>
+                <div class="flex gap-6">
+                    <a href="#"
+                        class="text-[0.9rem] text-white/50 transition-colors duration-300 hover:text-white">Privacy
+                        Policy</a>
+                    <a href="#"
+                        class="text-[0.9rem] text-white/50 transition-colors duration-300 hover:text-white">Terms</a>
+                </div>
+                <div>
+                    <p class="text-[0.9rem] text-white/50 text-center md:text-right">Developed by <a
+                            class="text-white/50 hover:text-gold transition-colors duration-300"
+                            href="https://longtail.info/">Longtail e-media</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
