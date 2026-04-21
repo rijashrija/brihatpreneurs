@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor Profile | Brihatpreneurs</title>
+    <meta name="description" content="Meet the industry veterans guiding the next generation of real estate entrepreneurs in Nepal. Real expertise, real impact.">
+    <link rel="icon" type="image/png" href="assets/image/brihat_logo_nobg.png">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-green': '#1D3C2A',
+                        'light-green': '#749444',
+                        'gold': '#B6A05E',
+                        'primary': '#1D3C2A',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            'from': { opacity: '0', transform: 'translateY(30px)' },
+                            'to': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 1s ease-out',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-[#fcfcfc]">
+    <nav class="absolute top-0 left-0 w-full flex justify-between items-center py-3 px-3 sm:px-[5%] md:py-3 lg:py-3 z-50 gap-4">
+        <div class="bg-white/90 p-2 px-4 rounded-lg flex items-center shadow-md">
+            <a href="index.html" class="transition-transform duration-300 hover:scale-105 block">
+                <img src="assets/image/brihat_logo_nobg.png" class="h-10 sm:h-14 md:h-20 w-auto" alt="Brihatpreneurs Logo">
+            </a>
+        </div>
+        <ul class="hidden lg:flex list-none gap-10 transition-all">
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="clinics.html" class="nav-link">Clinics</a></li>
+            <li><a href="ecosystem.html" class="nav-link">Ecosystem</a></li>
+            <li><a href="mentors.html" class="nav-link active">Mentors</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="apply.html" class="btn-pill">Apply Now</a>
+        </div>
+    </nav>
+    
+    <main>
+        <!-- Hero background filler -->
+        <section class="relative h-[250px] md:h-[350px] w-full bg-[radial-gradient(circle,rgba(29,60,42,0.85)0%,rgba(29,60,42,1)100%)] bg-[url('assets/image/hero_bg.png')] bg-cover bg-center before:content-[''] before:absolute before:inset-0 before:bg-dark-green/90 before:z-10 flex items-end p-8 pb-12">
+            <div class="max-w-[1200px] mx-auto w-full relative z-20 flex justify-end animate-fade-in-up">
+                <h1 class="hero-heading text-white drop-shadow-lg text-right">Know About Our <br class="md:hidden"> <span class="text-gold italic">Mentors</span></h1>
+            </div>
+        </section>
+
+        <!-- Profile Content -->
+        <section class="max-w-[1200px] mx-auto px-[5%] pb-24 relative z-20 -mt-[100px] md:-mt-[150px]">
+            <div class="grid grid-cols-1 lg:grid-cols-[1fr,2fr] gap-10 lg:gap-16 items-start">
+                
+                <!-- Left Sidebar: Profile Card -->
+                <div class="sticky top-[100px]">
+                    <div class="bg-white rounded-[30px] p-8 shadow-xl border border-black/5 animate-fade-in-up">
+                        <div class="w-full aspect-square rounded-[20px] overflow-hidden mb-6 shadow-md">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80" alt="Binod Maharjan" class="w-full h-full object-cover object-top">
+                        </div>
+                        <h1 class="font-['Outfit'] text-[1.8rem] md:text-[2rem] font-bold text-dark-green leading-tight mb-2">Binod Maharjan</h1>
+                        <span class="block text-gold text-sm font-bold uppercase tracking-wider mb-6">Finance Expert</span>
+                        
+                        <div class="flex gap-4 border-b border-gray-100">
+                            <a href="https://www.linkedin.com/" class="social-icon variant-profile"><i class="fa-brands fa-linkedin-in text-lg"></i></a>
+                        </div>
+                        
+                        <div class="space-y-4 pt-2">
+                            <div class="flex items-center gap-4 text-[#555]">
+                                <i class="fa-solid fa-location-dot w-5 text-center text-gold"></i>
+                                <span class="text-[0.95rem]">Kathmandu, Nepal</span>
+                            </div>
+                            <div class="flex items-center gap-4 text-[#555]">
+                                <i class="fa-solid fa-envelope w-5 text-center text-gold"></i>
+                                <span class="text-[0.95rem]">info@brihatpreneurs.com</span>
+                            </div>
+                        </div>
+
+                        <a href="contact.html" class="mt-8 block w-full text-center py-4 bg-dark-green text-white font-bold rounded-xl transition-all hover:bg-gold hover:text-dark-green shadow-lg">Book a Session</a>
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="pt-8 md:pt-32 lg:pt-[150px]">
+                    <div class="bg-white rounded-[30px] p-8 md:p-12 shadow-md border border-black/5 animate-fade-in-up" style="animation-delay: 0.1s;">
+                        
+                        <!-- Background section -->
+                        <div class="mb-14">
+                            <h2 class="font-['Outfit'] text-[1.8rem] font-bold text-dark-green mb-6 flex items-center gap-3">
+                                <i class="fa-regular fa-user text-gold text-2xl"></i> Background
+                            </h2>
+                            <div class="text-[#555] text-[1.05rem] leading-relaxed space-y-5">
+                                <p>Binod is a veteran finance strategist with deep expertise in real estate capital structures and project financing. He has spent 15 years auditing and advising some of the largest infrastructure and development projects in South Asia.</p>
+                                <p>He specializes in feasibility audits, risk mitigation, and connecting founders with institutional capital. Binod is known for his analytical rigor and his ability to see the numbers behind the narrative.</p>
+                            </div>
+                        </div>
+
+                        <!-- Experience section -->
+                        <div class="mb-14">
+                            <h2 class="font-['Outfit'] text-[1.8rem] font-bold text-dark-green mb-6 flex items-center gap-3">
+                                <i class="fa-regular fa-building text-gold text-2xl"></i> Experience
+                            </h2>
+                            <div class="mt-6 grid gap-4 bg-[#fcfcfc] border border-gray-100 p-8 rounded-[20px]">
+                                <div class="pb-6 border-b border-gray-100 last:border-0 last:pb-0">
+                                    <h3 class="font-bold text-dark-green text-[1.2rem] mb-1">Founder & Managing Director</h3>
+                                    <p class="text-gold text-[0.85rem] font-bold uppercase tracking-wider mb-2">Maharjan Capital &bull; 2016 - Present</p>
+                                    <p class="text-[#555] text-[1rem] leading-relaxed mt-3">Managing a portfolio of over Rs. 5B in real estate assets, focusing on high-yield commercial developments and strategic land banks.</p>
+                                </div>
+                                <div class="pb-6 border-b border-gray-100 last:border-0 last:pb-0">
+                                    <h3 class="font-bold text-dark-green text-[1.2rem] mb-1">Chief Operations Officer</h3>
+                                    <p class="text-gray-500 text-[0.85rem] font-bold uppercase tracking-wider mb-2">Central Bank (Consultancy) &bull; 2008 - 2016</p>
+                                    <p class="text-[#555] text-[1rem] leading-relaxed mt-3">Served as a lead consultant for real estate lending policy, helping shape the regulatory framework for mortgage-backed securities in Nepal.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Education & Qualifications -->
+                        <div>
+                            <h2 class="font-['Outfit'] text-[1.8rem] font-bold text-dark-green mb-6 flex items-center gap-3">
+                                <i class="fa-solid fa-graduation-cap text-gold text-2xl"></i> Education & Qualifications
+                            </h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="bg-[#fcfcfc] p-6 md:p-8 rounded-[20px] border border-gray-100 transition-all hover:border-gold/50 hover:shadow-md group">
+                                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center text-gold shadow-sm border border-gray-100 mb-5 group-hover:-translate-y-1 transition-transform">
+                                        <i class="fa-solid fa-building-columns text-2xl"></i>
+                                    </div>
+                                    <h3 class="font-bold text-dark-green text-[1.1rem] mb-1">Chartered Accountant (CA)</h3>
+                                    <p class="text-[#888] text-sm mb-4">Institute of Chartered Accountants</p>
+                                    <p class="text-[#555] text-[0.95rem] leading-relaxed">Expert in taxation, audit, and financial reporting for large-scale conglomerates.</p>
+                                </div>
+                                <div class="bg-[#fcfcfc] p-6 md:p-8 rounded-[20px] border border-gray-100 transition-all hover:border-gold/50 hover:shadow-md group">
+                                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center text-gold shadow-sm border border-gray-100 mb-5 group-hover:-translate-y-1 transition-transform">
+                                        <i class="fa-solid fa-certificate text-2xl"></i>
+                                    </div>
+                                    <h3 class="font-bold text-dark-green text-[1.1rem] mb-1">CFA Level 3</h3>
+                                    <p class="text-[#888] text-sm mb-4">CFA Institute</p>
+                                    <p class="text-[#555] text-[0.95rem] leading-relaxed">Advanced portfolio management and investment analysis specialized in alternative assets.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-white pt-24 pb-10 px-[5%] border-t border-white/10">
+        <div class="max-w-[1300px] mx-auto">
+            <div class="flex flex-col lg:flex-row gap-16 lg:gap-24 mb-20">
+                <div class="flex-[1.2]">
+                    <p class="text-[1.1rem] text-white/70 leading-[1.8] max-w-[400px] mb-4">A venture studio empowering real estate entrepreneurs with space, mentorship, and community.</p>
+                    <p class="text-gold font-bold italic opacity-90 mb-8">Land to Legacy. Build what lasts.</p>
+                    <div class="flex gap-4">
+                        <a href="https://www.linkedin.com/" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="flex-[2] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div>
+                        <h4 class="font-['Outfit'] text-[1.3rem] mb-8 font-semibold">Information</h4>
+                        <ul class="list-none p-0 flex flex-col gap-4">
+                            <li><a href="about.html" class="footer-link">About</a></li>
+                            <li><a href="services.html" class="footer-link">Programs</a></li>
+                            <li><a href="ecosystem.html" class="footer-link">Ecosystem</a></li>
+                            <li><a href="mentors.html" class="text-gold font-medium text-[0.95rem] transition-all duration-300 hover:translate-x-1.5 block">Mentors</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-['Outfit'] text-[1.3rem] mb-8 font-semibold">Programs</h4>
+                        <ul class="list-none p-0 flex flex-col gap-4">
+                            <li><a href="services.html#venture-studio" class="footer-link">Venture Studio</a></li>
+                            <li><a href="services.html#incubation" class="footer-link">Incubation</a></li>
+                            <li><a href="services.html#mentorship" class="footer-link">Mentorship</a></li>
+                            <li><a href="contact.html" class="footer-link">Contact</a></li>
+                            <li><a href="services.html#coworking" class="footer-link">Coworking</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-['Outfit'] text-[1.3rem] mb-8 font-semibold">Contact</h4>
+                        <div class="flex flex-col gap-4">
+                            <p class="text-[0.95rem] text-white/70 leading-relaxed border-l-2 border-gold pl-4">Punya Mansion, Tahagalli, Kathmandu, Nepal</p>
+                            <p class="text-[0.95rem] text-white/70 leading-relaxed border-l-2 border-gold pl-4">info@brihatpreneurs.com</p>
+                            <p class="text-[0.95rem] text-white/70 leading-relaxed border-l-2 border-gold pl-4">+977-XXXXXXXXXX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-5">
+                <p class="text-[0.9rem] text-white/50">&copy; 2026 Brihatpreneurs, Kathmandu, Nepal. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-[0.9rem] text-white/50 hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-[0.9rem] text-white/50 hover:text-white transition-colors">Terms</a>
+                </div>
+                <p class="text-[0.9rem] text-white/50">Developed by <a class="hover:text-gold transition-colors" href="https://longtail.info/">Longtail e-media</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/navbar.js"></script>
+</body>
+</html>
